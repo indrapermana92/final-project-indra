@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project Indra Permana</title>
+
+    <style>
+        * {
+            /* box-sizing: border-box; */
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-image: linear-gradient(to bottom right, rgb(13, 49, 190), rgb(247, 225, 147));
+            position: fixed;
+            width: 100%;
+
+        }
+
+        nav ul {
+            display: flex;
+        }
+
+        nav ul li {
+            list-style-type: none;
+            padding: 0.5em 1em;
+        }
+        nav ul li:hover {
+            background-color: orange;
+            color: black;
+            transform: scale(1.1);
+        }
+
+        nav ul li a {
+            text-decoration: none;
+        }
+
+        #logo-wrapper img {
+            width: 100px;
+        }
+
+        .content {
+            min-height: 100vh;
+            padding: 0.5em 2em;
+            padding-top: 7em;
+        }
+
+        .card {
+            background-color: rgb(255, 255, 255, .2);
+            padding: 1em;
+            border-radius: .5em;
+        }
+
+        #content-1 {
+            background: rgb(2, 216, 188);
+            /* background-image: url("https://th.bing.com/th/id/R.72d3986a53c744e4fe72bc0cbdcfb7a3?rik=n0lfpaV0JwXPDg&riu=http%3a%2f%2fwww.pngmart.com%2ffiles%2f13%2fElegant-Pattern-PNG-Transparent-Image.png&ehk=J9WUCdtnP9Oa14s0syy34GFeKsoJjY9g1RZGlnFiWlc%3d&risl=&pid=ImgRaw&r=0"); */
+        }
+        #content-2 {
+            background: rgb(46, 184, 243);
+        }
+        #content-3 {
+            background: pink;
+        }
+        #content-4 {
+            background: rgb(128, 167, 2);
+        }
+        #content-5 {
+            background: orange;
+        }
+        #content-6 {
+            background: tomato;
+        }
+
+        footer {
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            font-size: 10px;
+            padding: 1em;
+        }
+
+        #btn-contact-me {
+            background-color: rgb(255, 255, 255);
+            color: #fff;
+            padding: 0.5em 1em;
+            border: none;
+            border-radius: 0.3em;
+        }
+
+        .section-wrapper {
+            display: flex;
+        }
+        .skill-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .skill-item {
+            margin-bottom: 20px;
+        }
+
+        .skill-label {
+            font-weight: bold;
+        }
+
+        .progress {
+            height: 20px;
+            background-color: #f0f0f0;
+            border-radius: 5px;
+        }
+
+        .progress-bar {
+            height: 100%;
+            border-radius: 5px;
+            text-align: right;
+            line-height: 20px;
+            color: #fff;
+        }
+        #button1:hover {
+            background-color: white;
+            color: red;
+            
+            border: solid 2px red;
+            cursor: pointer;
+        }
+        #button2:hover {
+            background-color: white;
+            color: red;
+            
+            border: solid 2px red;
+            cursor: pointer;
+        }
+    </style>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <header>
+        <div id="logo-wrapper">
+            <img src="logo.jpg" alt="Logo" />
+        </div>
+
+        <nav id="menu">
+            <ul>
+                <li><a href="#content-1">About</a></li>
+                <li><a href="#content-2">Education</a></li>
+                <li><a href="#content-3">Experience</a></li>
+                <li><a href="#content-4">Skills</a></li>
+                <li><a href="#content-5">Interest</a></li>
+                <li><a href="#content-6">Awards</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="section-wrapper">
+            <section id="content-1" class="content">
+                <h3>Selamat datang di Website Indra Permana. Melayani <span id="typed-element"></span></h3>
+    
+                <div class="card">
+                    <h1>Tentang</h1>
+    
+    
+                    <p>Halo Sahabat, perkenalkan nama saya <b>Indra Permana,</b> saya lahir di Tasikmalaya 14 Juli 1992. Saya merupakan anak ke-3 dari tiga bersaudara yang semuanya adalah laki-laki. Saya bersyukur terlahir dari orangtua yang sangat luar biasa dan sangat mencintai kami, semoga kelak Allah kumpulkan kami di Surga-Nya. Aamiin.</p>
+                    <p>Saat ini saya bekerja sebagai Performance Marketer yang bertanggungjawab dalam mengoptimalkan campaign melalui iklan berbayar (advertising). Selain itu, saya juga memberikan analisa terkait efektivitas sebuah campaign untuk dijadikan bahan pertimbangan dalam membuat campaign selanjutnya. </p>
+    
+                </div>
+    
+            </section>
+    
+            <section id="content-2" class="content">
+                <div class="card">
+                    <h1>Riwayat Pendidikan</h1>
+                    <p>Semua pendidikan formal saya, saya tempuh di kota kelahiran saya di Tasikmalaya. Adapun berbagai pelatihan yang saya ikuti lebih beragam. Mulai dari pelatihan online atau offline. Termasuk program terbaru yang saya ikuti bersama Hacktiv8 adalah dalam rangka untuk menambah skil dan wawasan yang mudah-mudahan dapat membantu karir saya kedepannya. Berikut merupakan riwayat pendidkan saya baik pendidikan formal ataupun informal.</p>
+    
+                    <table border="1" style="width: 100%;">
+                        <tr>
+                            <th style="width: 40%;">Pendidikan Formal</th>
+                            <th style="width: 30%;">Jurusan</th>
+                            <th style="width: 30%;">Tahun Lulus</th>
+                        </tr>
+                        <tr>
+                            <td style="width: 40%;">SD Negeri Bantarsari Tasikmalaya</td>
+                            <td style="width: 30%;">-</td>
+                            <td style="width: 30%;">2004</td>
+                        </tr>
+                        <tr>
+                            <td style="width: 40%;">SMP Negeri 6 Tasikmalaya</td>
+                            <td style="width: 30%;">-</td>
+                            <td style="width: 30%;">2007</td>
+                        </tr>
+                        <tr>
+                            <td style="width: 40%;">SMK Negeri 1 Tasikmalaya</td>
+                            <td style="width: 30%;">Multimedia</td>
+                            <td style="width: 30%;">2010</td>
+                        </tr>
+                        <tr>
+                            <td style="width: 40%;">STMIK DCI Tasikmalaya</td>
+                            <td style="width: 30%;">Teknik Informatika</td>
+                            <td style="width: 30%;">2017</td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+            
+            
+            
+        </div>
+
+        <div class="section-wrapper">
+            <section id="content-3" class="content">
+                <div class="card">
+                    <h1>Riwayat Pekerjaan</h1>
+                    <table border="1">
+                        <tr>
+                            <th>Nama Perusahaan</th>
+                            <th>Jabatan</th>
+                            <th>Periode</th>
+                        </tr>
+                        <tr>
+                            <td>PT. Yamaha Motor Manufacturing West Java</td>
+                            <td>Staff Produksi</td>
+                            <td>2010 - 2011</td>
+                        </tr>
+                        <tr>
+                            <td>PT. Hini Daiki Indonesia</td>
+                            <td>Staff Produksi</td>
+                            <td>2011 - 2013</td>
+                        </tr>
+                        <tr>
+                            <td>SMJ Net</td>
+                            <td>Owner</td>
+                            <td>2013 - 2014</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="4">DT Peduli</td>
+                            <td>Staff Marketing Communication</td>
+                            <td>2014 - 2019</td>
+                        </tr>
+                        <tr>
+                            <td>Fundraising Manager</td>
+                            <td>2020 - 2021</td>
+                        </tr>
+                        <tr>
+                            <td>Staff Design & Video</td>
+                            <td>2021 - 2022</td>
+                        </tr>
+                        <tr>
+                            <td>Performance Marketing</td>
+                            <td>2023 - Sekarang</td>
+                        </tr>
+                        
+                    </table>
+                </div>
+            </section>
+            
+            <section id="content-4" class="content">
+                <div class="card">
+                    <h1>Skills</h1>
+                    <ul class="skill-list">
+                        <li class="skill-item">
+                            <span class="skill-label">Adobe Premiere Pro</span>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 85%; background-color: #0073e6;">85%</div>
+                            </div>
+                        </li>
+                        <li class="skill-item">
+                            <span class="skill-label">Adobe Photoshop</span>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 75%; background-color: #ff7f01;">75%</div>
+                            </div>
+                        </li>
+                        <li class="skill-item">
+                            <span class="skill-label">Adobe After Effect</span>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 75%; background-color: #ff7f01;">75%</div>
+                            </div>
+                        </li>
+                        <li class="skill-item">
+                            <span class="skill-label">Coreldraw</span>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 90%; background-color: #00b65b;">90%</div>
+                            </div>
+                        </li>
+                        <li class="skill-item">
+                            <span class="skill-label">English</span>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 85%; background-color: #0073e6;">85%</div>
+                            </div>
+                        </li>
+                        <li class="skill-item">
+                            <span class="skill-label">Office 365</span>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 95%; background-color: #009c55;">95%</div>
+                            </div>
+                        </li>
+                        <li class="skill-item">
+                            <span class="skill-label">Paid Ads (Meta, Google Ads, Tiktok Ads)</span>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 75%; background-color: #ff7f01;">75%</div>
+                            </div>
+                        </li>
+                        <li class="skill-item">
+                            <span class="skill-label">Copywriting</span>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 60%; background-color: #ffbf00;">60%</div>
+                            </div>
+                        </li>
+                    </ul>
+                    <p><b>Daftar Portofolio :</b></p>
+                    <button id="button1">Graphic Design</button>
+                    <button id="button2">Video Editing</button>
+            </section>
+        </div>
+        
+        <div class="section-wrapper">
+            <section id="content-5" class="content">
+                <div class="card">
+                    <h1>Minat</h1>
+                    <p>Sejak kecil, saya sudah mulai merasakan ketertarikan yang kuat terhadap ilmu komputer. Ketika itu, saya sangat penasaran dengan dunia teknologi dan komputer, dan semangat saya untuk belajar dan mengembangkan kemampuan dalam bidang ini tak pernah surut. Saya menghabiskan banyak waktu membaca buku, mengeksplorasi berbagai kursus online, dan mengikuti kompetisi pemrograman untuk memperluas pengetahuan saya dalam ilmu komputer.</p>
+                    <p>Namun, minat saya tak hanya terbatas pada dunia digital. Saya juga memiliki beragam ketertarikan dalam dunia olahraga. Olahraga adalah bagian penting dari kehidupan saya, dan saya berusaha untuk menjaga kesehatan dan kebugaran dengan berolahraga secara teratur. Saya senang bermain futsal dengan teman-teman di waktu luang, bersepeda untuk menjelajahi tempat-tempat baru, bulu tangkis di lapangan, dan bermain tenis meja.</p>
+                </div>
+            </section>
+            <section id="content-6" class="content">
+                <div class="card">
+                    <h1>Penghargaan</h1>
+                    <p>Dikarenakan keterbatasan waktu, saya mohon maaf tidak bisa secara optimal mengerjakan tugas ini. Terimakasih tim Hactiv8 Especially <b>Mas Rizki dan Mba Jessica</b>, semoga rekan-rekan di Hacktiv8 Sehat Selalu. 
+                    </p>
+
+                    <p>Salam Hormat Dari Saya,</p> <br>
+                    <br>
+                    <br>
+                    <br>   
+                    <p><b>Indra Permana</b></p>
+                </div>
+            </section>
+        </div>
+
+    </main>
+
+    <footer>
+        <span>&copy; 2023 All Rights Reserved. Indra Permana    .</span>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js" integrity="sha512-DUC8yqWf7ez3JD1jszxCWSVB0DMP78eOyBpMa5aJki1bIRARykviOuImIczkxlj1KhVSyS16w2FSQetkD4UU2w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2   @11"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <script>
+
+        let typed = new Typed('#typed-element', {
+            strings: [
+                'pembuatan desain grafis',
+                'pengerjaan video editing',
+                'pembuatan video motion',
+                'Website undangan pernikahan',
+               
+            ],
+            typeSpeed: 50,
+            backSpeed: 10,
+            loop: true
+        });
+
+        contactMe = () => {
+            Swal.fire({
+                icon: 'success',
+                title: 'Berhasil!',
+                text: 'Terima kasih telah menghubungi saya. Nanti akan saya balas via e-mail ya..',
+            });
+        }
+        document.getElementById("button1").addEventListener("click", function() {
+        window.location.href = "https://drive.google.com/drive/folders/1t_gYlQn3-OkjKZ0cle-ftcZR82yyMWHP?usp=sharing";
+        });
+        document.getElementById("button2").addEventListener("click", function() {
+        window.location.href = "https://www.youtube.com/channel/UCP23p8x8AnHvRPFFmkItFZQ";
+        });
+    </script>
+
+</body>
+</html>
